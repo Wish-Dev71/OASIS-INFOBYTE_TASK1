@@ -1,0 +1,214 @@
+    /* 1. Basic styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #faf8f2;
+      color: #243b30;
+      line-height: 1.6;
+    }
+
+    /* 2. Navigation bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #faf8f2;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e5dc;
+      z-index: 10;
+    }
+
+    .logo {
+      color: #234b3b;
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #243b30;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #c08b43;
+    }
+
+    /* 3. Hero section */
+    .hero {
+      min-height: 75vh;
+      padding: 70px 9%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 40px;
+      background: linear-gradient(120deg, #faf8f2, #e5eee6);
+    }
+
+    .tagline {
+      color: #557a63;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.15;
+      margin: 20px 0;
+    }
+
+    .hero p {
+      color: #5b665f;
+      font-size: 17px;
+      margin-bottom: 22px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #234b3b;
+      color: white;
+      padding: 12px 23px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #37694f;
+    }
+
+    .hero-art {
+      min-height: 320px;
+      border-radius: 45% 45% 15px 15px;
+      background:
+        radial-gradient(ellipse at 35% 42%,
+          #709779 0 17%, transparent 18%),
+        radial-gradient(ellipse at 65% 48%,
+          #a2bea1 0 20%, transparent 21%),
+        linear-gradient(140deg, #d7e6d8, #a7c5ad);
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      padding: 28px;
+      color: #234b3b;
+      font-size: 19px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* 4. Common section styling */
+    section {
+      padding: 70px 9%;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 35px;
+    }
+
+    .section-heading h2 {
+      font-size: 34px;
+      margin: 10px 0;
+    }
+
+    /* 5. Feature cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px #234b3b12;
+    }
+
+    .card h3 {
+      color: #234b3b;
+      margin: 12px 0;
+    }
+
+    .emoji {
+      font-size: 32px;
+    }
+
+    /* 6. About section */
+    .about {
+      background: #eaf2ec;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 720px;
+      margin: 15px auto 0;
+    }
+
+    /* 7. Contact section */
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      color: #234b3b;
+    }
+
+    footer {
+      background: #234b3b;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    /* 8. Mobile responsive design */
+    @media (max-width: 700px) {
+      nav {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      nav a {
+        margin-left: 8px;
+        font-size: 13px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 50px 7%;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+      }
+
+      .hero-art {
+        min-height: 240px;
+      }
+
+      section {
+        padding: 50px 7%;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+    
